@@ -1,0 +1,8 @@
+{
+    "model_name": "random_forest",
+    "model_version": "champion",
+    "tracking_base_url": "http://localhost",
+    "tracking_port": 5000,
+    "service_base_url": "http://localhost",
+    "service_port": 5002
+}

@@ -23,7 +23,7 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Iniciar serviços
-        run: docker compose up -d
+        run: docker compose up --build -d
 
       - name: Criar ambiente para executar testes com o conda
         uses: conda-incubator/setup-miniconda@v2

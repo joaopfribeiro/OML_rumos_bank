@@ -2,7 +2,7 @@ import fastapi
 from fastapi.middleware.cors import CORSMiddleware
 
 import mlflow
-from pydantic import BaseModel, conint
+from pydantic import BaseModel, Field
 import pandas as pd
 import json
 import uvicorn
@@ -18,17 +18,17 @@ class Request(BaseModel):
     Request model for the API, defining the input structure.
 
     Attributes:
-        LIMIT_BAL (int): Amount of the given credit.
+        LIMIT_BAL (float): Amount of the given credit.
         SEX (int): Gender (1 = male, 2 = female).
         EDUCATION (int): Education (1 = graduate school, 2 = university, 3 = high school, 4 = others).
         MARRIAGE (int): Marital status (1 = married, 2 = single, 3 = divorced).
         AGE (int): Age (years).        
-        PAY_0 (float): Repayment status in September, 2005.
-        PAY_2 (float): Repayment status in August, 2005.                
-        PAY_3 (float): Repayment status in July, 2005.                
-        PAY_4 (float): Repayment status in June, 2005.                        
-        PAY_5 (float): Repayment status in May, 2005.                        
-        PAY_6 (float): Repayment status in April, 2005.                        
+        PAY_0 (int): Repayment status in September, 2005.
+        PAY_2 (int): Repayment status in August, 2005.                
+        PAY_3 (int): Repayment status in July, 2005.                
+        PAY_4 (int): Repayment status in June, 2005.                        
+        PAY_5 (int): Repayment status in May, 2005.                        
+        PAY_6 (int): Repayment status in April, 2005.                        
         BILL_AMT1 (float): Amount of bill statement in September, 2005.                        
         BILL_AMT2 (float): Amount of bill statement in August, 2005.                        
         BILL_AMT3 (float): Amount of bill statement in July, 2005.                        
@@ -42,7 +42,7 @@ class Request(BaseModel):
         PAY_AMT5 (float): Amount of previous payment in May, 2005.                        
         PAY_AMT6 (float): Amount of previous payment in April, 2005.            
     """
-    LIMIT_BAL: conint(ge=0) = 0 # type: ignore
+    LIMIT_BAL: float = Field(..., ge=0)
     SEX: int = 1
     EDUCATION: int = 1
     MARRIAGE: int = 1

@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1743961215605
+current_stage: None
+description: ''
+last_updated_timestamp: 1743961215605
+name: decision_tree
+run_id: ee0dd96b03514a0aa2575c70ccfa9219
+run_link: ''
+source: mlflow-artifacts:/851929301218985109/ee0dd96b03514a0aa2575c70ccfa9219/artifacts/sklearn-model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/851929301218985109/ee0dd96b03514a0aa2575c70ccfa9219/artifacts/sklearn-model
+user_id: null
+version: 1

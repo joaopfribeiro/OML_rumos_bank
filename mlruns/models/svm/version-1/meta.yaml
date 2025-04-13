@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1743961403587
+current_stage: None
+description: ''
+last_updated_timestamp: 1743961403587
+name: svm
+run_id: 4fb1f7ac17534ff284b8eb826cc7019c
+run_link: ''
+source: mlflow-artifacts:/851929301218985109/4fb1f7ac17534ff284b8eb826cc7019c/artifacts/sklearn-model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/851929301218985109/4fb1f7ac17534ff284b8eb826cc7019c/artifacts/sklearn-model
+user_id: null
+version: 1

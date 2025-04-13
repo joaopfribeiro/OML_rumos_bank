@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1743961090918
+current_stage: None
+description: ''
+last_updated_timestamp: 1743961090918
+name: ann
+run_id: e8195474cab34731b27335fbb13ef972
+run_link: ''
+source: mlflow-artifacts:/851929301218985109/e8195474cab34731b27335fbb13ef972/artifacts/sklearn-model
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/851929301218985109/e8195474cab34731b27335fbb13ef972/artifacts/sklearn-model
+user_id: null
+version: 1

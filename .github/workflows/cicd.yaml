@@ -39,7 +39,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.TF }}
 
       - name: Enviar imagem serviço para o repositório do GitHub
         run: docker push ghcr.io/joaopfribeiro/oml_rumos_bank_service:latest
